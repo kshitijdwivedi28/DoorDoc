@@ -116,7 +116,7 @@ def user(request):
         pdf = FPDF()  
         pdf.add_page()
         pdf.set_font("Arial", size = 15)
-        pdf.cell(200, 10, txt = "GetADoc", ln = 1, align = 'C')
+        pdf.cell(200, 10, txt = "DoorDoc", ln = 1, align = 'C')
         pdf.cell(200, 10, txt = "________________________________________________________________________________________________________________________",ln = 2, align = 'L')
         pdf.cell(200, 10, txt = "Unique Appointment ID : "+phone+aadhar,ln = 2, align = 'C')
         pdf.cell(200, 10, txt = "________________________________________________________________________________________________________________________",ln = 3, align = 'L')
@@ -151,7 +151,7 @@ def user(request):
         pdf.cell(200, 10, txt = "",ln = 20, align = 'L')
         pdf.cell(200, 10, txt = "Thank you for choosing us.",ln = 15, align = 'C')
         pdf.cell(200, 10, txt = "Ritik Vashist",ln = 16, align = 'C')
-        pdf.output("GetADoc.pdf")
+        pdf.output("DoorDoc.pdf")
         dict['Key']="no"
         print("Downloaded Successfully") 
     return render(request,'../templates/index1.html',dict)
