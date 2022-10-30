@@ -110,10 +110,12 @@ Our software solution has the following components:
      IV.  Once done, you will see a successful installation message\
      V.   Similarly, install other mentioned modules following I, II, III and IV steps
 
- 10.	Now, enter the following command in the terminal – python manage.py runserver
- 11.	If you encounter with an error, file not found. Right Click on the manage.py file in the left side bar, click on copy path, and replace manage.py with the path in the above command.
- 12.	Now, you will see Starting Development Server stating the link of the website.
- 13. For the dashboard, download and install PowerBI - iska dekh lena yaar ek baar, ki tum link alag se share kr rhe ho ya kya?
+ 10.	Enter the following commands to migrate Schema - python manage.py makemigrations
+ 11.    Now, enter command - python manage.py migrate
+ 11.    Enter the following command in the terminal – python manage.py runserver
+ 12.	If you encounter with an error, file not found. Right Click on the manage.py file in the left side bar, click on copy path, and replace manage.py with the path in the above command.
+ 13.	Now, you will see Starting Development Server stating the link of the website.
+ 14. For the dashboard, download and install PowerBI - iska dekh lena yaar ek baar, ki tum link alag se share kr rhe ho ya kya?
 
  # Thank you :)
 ## TEAM NAME
