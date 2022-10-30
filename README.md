@@ -88,6 +88,24 @@ Our software solution has the following components:
 - Pandas, numpy, and sklearn is used for handling CSV files and data analysis.
 
 # Implementation Screenshots
+![1](https://user-images.githubusercontent.com/59134476/198878287-492a0493-0c8e-4de8-bf58-e3a6ccef4001.png)
+![2](https://user-images.githubusercontent.com/59134476/198878332-ea64a3b8-cdc0-4a04-83c6-d02f773aca84.png)
+![3](https://user-images.githubusercontent.com/59134476/198878334-24639cf4-b4fa-437b-be3a-5eb89f33c4af.png)
+![4](https://user-images.githubusercontent.com/59134476/198878336-8eaaa1a2-f336-4291-aa72-fe8661378944.png)
+![5](https://user-images.githubusercontent.com/59134476/198878338-ea84e00b-69d5-4291-aa96-5d8103cc6247.png)
+![6](https://user-images.githubusercontent.com/59134476/198878339-d2dc887e-ef5c-4437-ac12-7676510ac87c.png)
+![7](https://user-images.githubusercontent.com/59134476/198878320-f803f221-1a00-4b47-8365-a15c8cc12817.png)
+![8](https://user-images.githubusercontent.com/59134476/198878321-f77a71f5-a95e-4e99-af1d-979301fbaaf9.png)
+![9](https://user-images.githubusercontent.com/59134476/198878323-42ca34ed-0ef7-4f04-9637-6d6975e2bff8.png)
+![10](https://user-images.githubusercontent.com/59134476/198878324-100b378d-c1bc-4f79-8b97-bdc6c2038ba5.png)
+![11](https://user-images.githubusercontent.com/59134476/198878325-e7619a5f-f24c-456f-a13a-708fa5accf94.png)
+![12](https://user-images.githubusercontent.com/59134476/198878326-4f531d86-b85b-46ae-a560-bf7b3535c58c.png)
+![13](https://user-images.githubusercontent.com/59134476/198878327-8fd69b12-08af-4d17-bf2f-98e81914c5b0.png)
+![14](https://user-images.githubusercontent.com/59134476/198878329-644b3e72-d081-4c4f-94d5-eac032358764.png)
+![15](https://user-images.githubusercontent.com/59134476/198878330-4da0041b-34bf-45a2-8cf7-8b3b39d93232.png)
+![powerbi](https://user-images.githubusercontent.com/59134476/198878331-cd50d122-6fdd-49d7-a342-fbe93f0420d9.png)
+
+
 
 # Video Link 
 ## Demonstration of the project
