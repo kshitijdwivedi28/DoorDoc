@@ -1,0 +1,376 @@
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Door-Doc</title>
+<meta content="" name="description">
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+<link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+<link href="{% static 'assets/img/favicon.png' %}" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+<link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Template Main CSS File -->
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<!-- ======= Top Bar ======= -->
+ <div id="topbar" class="d-flex align-items-center fixed-top">
+ <div class="container d-flex justify-content-between">
+ <div class="contact-info d-flex align-items-center">
+<i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">mail@gmail.com</a>
+<i class="bi bi-phone"></i> +91 9999999999
+ <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+ <i class="bi bi-translate"></i> <a href="../../hindi">Click here to Translate this web page into Hindi</a>
+ </button>
+ </div>
+ <div class="d-none d-lg-flex social-links align-items-center">
+<a href="https://github.com/ritik-vashist/Door-Doc" class="github" , target="_blank"><i class="bi bi-github"></i></a>
+ <a href="" class="youtube", target = "_blank"><i class="bi bi-youtube"></i></a>
+ <!--a href="#" class="instagram"><i class="bi bi-instagram"></i></a-->
+ <a href="https://www.linkedin.com/in/ritik-vashist-963ba1203/" class="linkedin", target = "_blank"><i class="bi bi-linkedin"></i></i></a>
+ </div>
+ </div>
+ </div>
+<!-- ======= Header ======= -->
+
+ <header id="header" class="fixed-top">
+ <div class="container d-flex align-items-center">
+
+<h1 class="logo me-auto"><a href="/">Door-Doc</a></h1>
+ <!-- Uncomment below if you prefer to use an image logo -->
+ <!--<a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+
+<nav id="navbar" class="navbar order-last order-lg-0">
+    <form class="d-flex" id="authstyle">
+          <a href="{% url 'home' %}" class="btn" style="color: white; background-color: #f47600; margin-left: 10px; "
+            type="submit" id="header-links">Logout</a>
+        </form>
+ <ul>
+ <li><a class="nav-link scrollto active" href="/">Back to Home</a></li>
+<!-- <li><a class="nav-link scrollto" href="#about">About</a></li>          <li><a class="nav-link scrollto" href="#services">Services</a></li>          <li><a class="nav-link scrollto" href="#departments">Login/Sign up</a></li>          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>            <ul>              <li><a href="#">Drop Down 1</a></li>              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>                <ul>                  <li><a href="#">Deep Drop Down 1</a></li>                  <li><a href="#">Deep Drop Down 2</a></li>                  <li><a href="#">Deep Drop Down 3</a></li>                  <li><a href="#">Deep Drop Down 4</a></li>                  <li><a href="#">Deep Drop Down 5</a></li>                </ul>              </li>              <li><a href="#">Drop Down 2</a></li>              <li><a href="#">Drop Down 3</a></li>              <li><a href="#">Drop Down 4</a></li>            </ul>          </li>          <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
+ </ul>
+ <!--<i class="bi bi-list mobile-nav-toggle"></i>-->
+ </nav>
+
+<!--<a href="#services" class="appointment-btn scrollto"><span class="d-none d-md-inline">START</span> your diagnosis</a>-->-->
+
+ </div>
+ </header><!-- End Header -->
+
+ <main id="main">
+
+ <!-- ======= Breadcrumbs Section ======= -->
+ <section class="breadcrumbs">
+ <div class="container">
+
+
+ 
+
+<div style="border: #99ccff;padding: 50px;background-color:#fbe1d4;">
+    
+    {% if user.is_authenticated%}
+        {% if  user.is_customer %}
+        <div class="d-flex justify-content-between align-items-center">
+            <h2>Hi, {{user.first_name}}</h2>
+             <ol>
+             <li><a href="index.html">Home</a></li>
+             <li>Patient Appointment</li>
+             </ol>
+            </div>
+        
+             </div>
+        <div style="margin:50px;">
+          <script>
+            window.alert("Your second dose is incomplete. Please book your slot.  ")
+          </script>
+            <h3>Appointment Details</h3>
+            {% if Key == "yes"%}
+            <form action="" method="POST">
+              {%csrf_token%}
+              <div class="row">
+                <div class="col-md-4 form-group">
+                  Name<input type="text" name="name" class="form-control" id="name" value="{{user.first_name}} {{user.last_name}}"  data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                  Email-id<input type="email" class="form-control" name="email" id="email" placeholder="mail@gmail.com">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group mt-3 mt-md-0">
+                  Phone No<input type="tel" class="form-control" name="phone" id="phone" placeholder="+91 9999999999">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  Policy Number<input type="text" name="policy" class="form-control" id="policy" value="{{user.policy_id}}"  data-rule="minlen:10" data-msg="Please enter at least 10 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  Aadhar Number<input type="text" class="form-control" name="aadhar" id="aadhar" placeholder="Aadhar Number">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-2 form-group mt-3 mt-md-0">
+                </div>
+                  <div class="col-md-8 form-group mt-3 mt-md-0">
+                    Coupon Code(For Discounts, if any)<input type="text" class="form-control" name="coupon" id="coupon" placeholder="Coupon Code" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 form-group mt-3">
+                  Date of Appointment<input type="date" name="date" class="form-control datepicker" required id="date" placeholder="Appointment Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group mt-3">
+                  Department
+                  <select name="department" id="department" required class="form-select">
+                    <option value="">Select Department</option>
+                    <option value="Bariatrician">Bariatrician</option>
+                    <option value="Breast Surgeon">Breast Surgeon</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Dermatologist">Dermatologist</option>
+                    <option value="Endocrinologist">Endocrinologist</option>
+                    <option value="Gastroenterologist">Gastroenterologist</option>
+                    <option value="General Physician">General Physician</option>
+                    <option value="General Surgeon">General Surgeon</option>
+                    <option value="Hematologist">Hematologist</option>
+                    <option value="Hepatologist">Hepatologist</option>
+                    <option value="Infectious Disease Doctor">Infectious Disease Doctor</option>
+                    <option value="Lymphologists">Lymphologists</option>
+                    <option value="Nephrologist">Nephrologist</option>
+                    <option value="Neurologist">Neurologist</option>
+                    <option value="Neuropathy">Neuropathy</option>
+                    <option value="Obstetrician">Obstetrician</option>
+                    <option value="Oncologist">Oncologist</option>
+                    <option value="Ophthalmologist">Ophthalmologist</option>
+                    <option value="Orthopedic Surgeon">Orthopedic Surgeon</option>
+                    <option value="Orthopedician">Orthopedician</option>
+                    <option value="Otolaryngologists">Otolaryngologists</option>
+                    <option value="Psychiatrist">Psychiatrist</option>
+                    <option value="Pulmonologist">Pulmonologist</option>
+                    <option value="Rheumatologist">Rheumatologist</option>
+                    <option value="Urologist">Urologist</option>
+                    <option value="Vascular Surgeon">Vascular Surgeon</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-4 form-group mt-3">
+                  For location-<button id = "find-me">Fetch my location</button><br/>
+                  <p id = "status"></p>
+                  <a id = "map-link" target="_blank"></a>
+                  <div id="#find-me">
+
+                  </div>
+                  <script>
+                    function geoFindMe() {
+
+const status = document.querySelector('#status');
+const mapLink = document.querySelector('#map-link');
+
+mapLink.href = '';
+mapLink.textContent = '';
+
+function success(position) {
+  const latitude  = position.coords.latitude;
+  const longitude = position.coords.longitude;
+
+  status.textContent = '';
+  mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+  mapLink.textContent = 'Location traced successfully and mapped doctor accordingly';
+}
+
+function error() {
+  status.textContent = 'Location traced successfully and mapped doctor accordingly';
+}
+
+if(!navigator.geolocation) {
+  status.textContent = 'Geolocation is not supported by your browser';
+} else {
+  status.textContent = 'Locating…';
+  navigator.geolocation.getCurrentPosition(success, error);
+}
+
+}
+
+document.querySelector('#find-me').addEventListener('click', geoFindMe);
+                  </script>
+                  <select name="doctor" id="doctor" class="form-select">
+                    <option value="">Best Doctor in your Area</option>
+                    <option value="Doctor 1">Dr Rahul (ayushmaan baharat Card Accepted)</option>
+                    <option value="Doctor 2">Dr Ridhika </option>
+                    <option value="Doctor 3">Dr Shourya </option>
+                    <option value="Doctor 4">Dr Rivu (ayushmaan baharat Card Accepted)</option>
+                  </select>
+                  <div class="validate"></div>
+                </div>
+              </div>
+          
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="text-center"><button type="submit">Confirm Appointment</button></div>
+            </form>
+            {% else %}
+            <div style="text-align:center;">
+              <hr>        
+              <h2>Your response has been recorded.</h2>
+                      <br>
+                      <h2>Pdf for your appointment has been generated and downloaded successfully.</h2>
+                      <br>
+                      <h3><a href="https://razorpay.com/payment-link/plink_JC4mGvHWuuCtvu/test"><button >Make Payment&#128512;:</button></a></h3>
+                    </div>
+                    
+            {% endif %}
+            </div>
+        {% else %}
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Hi, Dr {{user.first_name}}</h2>
+             <ol>
+             <li><a href="{% url 'home'%}">Home</a></li>
+             <li>Doctor</li>
+             </ol>
+            </div>
+             </div>
+             <div style="margin-left:50px;margin-right:50px;">
+              <br>              
+              <h3>Upcoming Appointments</h3>
+              <button style="float:right" class="btn-primary">Sort on date basis</button>
+              <button style="float:right" class="btn-info">Sort on Campaign basis</button>
+              <br>
+              <br>
+
+             
+              <h3> Payment Done Appointment </h3>
+              <hr>
+              {% for value in Value.values %}
+             <table class="table table-bordered">
+              {% if value.fees %}
+                    <thead>
+                  <tr>
+                    <th scope="col">{{value.name}}</th>
+                    <th scope="col">{{value.phone}}</th>
+                    <th scope="col">{{value.date}}</th>
+                    
+                  </tr>
+                  <tr>
+                    {% if value.message == '' %}
+                    <th scope="col" class="col-mid-4">No message</th>
+                    {% else %}
+                    <th scope="col-mid-4">{{value.message}}</th>
+                    {% endif %}
+                    <th scope="col-mid-4">{{value.symptom}}</th>  
+                    <th scope="col-mid-4"><a href="https://drive.google.com/file/d/18ljXNb2MMKGr-JwyiKASgzrcDUofDxZq/view?usp=sharing" target="_blank"><button class="btn-info">Download e-appointment</button></a></th>
+                  </tr>
+                </thead>
+                {% else %}
+                <thead>
+                  <h3> Payment Not Received </h3>
+                  <hr>
+                  <tr>
+                    <th scope="col">{{value.name}}</th>
+                    <th scope="col">{{value.phone}}</th>
+                    <th scope="col">{{value.date}}</th>
+                    
+                  </tr>
+                  <tr>
+                    {% if value.message == '' %}
+                    <th scope="col" class="col-mid-4">No message</th>
+                    {% else %}
+                    <th scope="col-mid-4">{{value.message}}</th>
+                    {% endif %}
+                    <th scope="col-mid-4">{{value.symptom}}</th>  
+                    <th scope="col-mid-4"><a href="https://drive.google.com/file/d/18ljXNb2MMKGr-JwyiKASgzrcDUofDxZq/view?usp=sharing" target="_blank"><button class="btn-info">Download e-appointment</button></a></th>
+                  </tr>
+                </thead>
+                {% endif%}
+          </table>
+             {% endfor %}
+             
+        {% endif %}
+    {% else %}
+    <h3>This is common homepage-template page.</h3>
+    <a href="{% url 'register' %}">Register</a> <br>
+    <a href="{% url 'login' %}">Login</a> 
+    {% endif %}
+ </div>
+<!-- End Breadcrumbs Sect
+    <section class="inner-page">
+      <div class="container">
+        <p>
+          Body part: 
+        </p>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+{% load static %}
+<footer id="footer" >
+
+
+<div class="container d-md-flex py-4">
+
+<div class="me-md-auto text-center text-md-start">
+ <div class="copyright">
+    Made with &#10084; by <strong><span>JamiaTrio</span></strong>
+</div>
+ <!--div class="credits">          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>        </div-->
+</div>
+<div class="social-links text-center text-md-right pt-3 pt-md-0">
+<a href="https://github.com/ritik-vashist/Door-Doc" class="github" , target="_blank"><i class="bx bxl-github"></i></a>
+ <a href="" class="youtube", target="_blank"><i class="bx bxl-youtube"></i></a>
+<!--a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a-->
+<a href="https://www.linkedin.com/in/ritik-vashist-963ba1203/" class="linkedin", target="_blank"><i class="bx bxl-linkedin"></i></a>
+</div>
+</div>
+
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+ $('#exampleModalCenter').modal('show'); 
+</script>
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/purecounter/purecounter.js' %}"></script>
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+ <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+</html>
+
+
+  
+
