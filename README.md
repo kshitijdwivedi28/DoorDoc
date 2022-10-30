@@ -1,9 +1,7 @@
 
 # Optum Stratethon: E-Track Season 4
 
-Project Name - Recommends medical specialists. With the help of computer vision, it makes it easier for people who lack in-depth knowledge of medical domain. Additionally, it offers in-depth insights on data that is tailored for medical establishments. 
-
-
+DoorDoc - Recommends medical specialists. With the help of computer vision, it makes it easier for people who lack in-depth knowledge of medical domain. Additionally, it offers in-depth insights on data that is tailored for medical establishments. 
 
 
 
@@ -18,14 +16,14 @@ The two main actors in the medical industry are those who manage medical facilit
 - **For medical establishments:** We analyse the data using the PowerBI tool and give the administrator several crucial insights, such as the number of reviews per month, the specialisation they are known for, sentiment analysis of the provided feedback (using Natural Language Processing), the average rating, the doctor who is most highly rated, the procedure they are best at, etc.
 
 # Key Value Proposition
-- Project Name places a high priority on providing people with explicit medical care.
-- For the user's specific affected area, Project Name provides the precise medical specialist.
+- DoorDoc places a high priority on providing people with explicit medical care.
+- For the user's specific affected area, DoorDoc provides the precise medical specialist.
 - Computer vision enables precise identification of the user's pain zone.
 - Simplicity is favoured as the user just needs to point at the area of discomfort.
-- Waiting time for patients / users is drastically reduced for consultation by General Physicians / Doctors and at Hospitals OPD's.
-- The communication gap between doctors and patients is filled through Project Name.
+- Waiting time for patients is drastically reduced for consultation by General Physicians / Doctors and at Hospitals OPD's.
+- The communication gap between doctors and patients is filled through DoorDoc.
 - Ready Home Preparedness and Bilingual Support for the users.
-- Utilizing data analysis provided by Project Name, simple audience targeting and clever marketing approach are possible.
+- Utilizing data analysis provided by DoorDoc, simple audience targeting and clever marketing approach are possible.
 
 # Target Customer
 Everyone can find something on our website. 
@@ -103,7 +101,7 @@ Our software solution has the following components:
  5.	Download and Installation link for Visual Studio Code – https://code.visualstudio.com/download
  6.	Open VS Code on your Platform and Navigate to File Button at the Top Corner
  7.	Click Open Folder, browse to your extracted folder and select that folder.
- 8.	Navigate to required_modules.txt file from the left pane in the folder and install the mentioned modules.
+ 8.	Navigate to required.txt file from the left pane in the folder and install the mentioned modules.
  9.	To install a specific module. For example – Django. Follow the below steps –
 
      I.   In VS Code, Press Ctrl+` (for windows) to open the terminal\
