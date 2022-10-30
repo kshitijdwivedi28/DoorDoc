@@ -1,0 +1,1 @@
+cough, headache, pain, stuffy_nose, throat_sore, 
